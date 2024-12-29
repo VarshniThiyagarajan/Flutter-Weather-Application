@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Global Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Search for a city..." />
+                <button class="search-btn" onclick="searchWeather()">🔍</button>
+                <button class="location-btn" onclick="getLiveWeather()">📍</button>
+            </div>
+        </header>
+
+        <main class="weather-display">
+            <div class="location-time">
+                <h1 id="city-name">--</h1>
+                <p id="current-date">--</p>
+            </div>
+            <div class="weather-info">
+                <img id="weather-icon" class="weather-icon" src="" alt="Weather Icon" />
+                <div class="temp-info">
+                    <h2 id="temperature">--°C</h2>
+                    <p id="description">--</p>
+                    <p id="feels-like">Feels like: --°C</p>
+                </div>
+            </div>
+        </main>
+
+        <section class="details">
+            <div class="detail-card">
+                <h3>Humidity</h3>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="detail-card">
+                <h3>Wind Speed</h3>
+                <p id="wind-speed">-- kph</p>
+            </div>
+            <div class="detail-card">
+                <h3>Pressure</h3>
+                <p id="pressure">-- mb</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
